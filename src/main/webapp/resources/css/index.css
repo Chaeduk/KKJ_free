@@ -1,0 +1,21 @@
+@import "./root.css";
+@import "./flex.css";
+@import "./typhography.css";
+@import "./spacing.css";
+@import "./form.css";
+@import "./header.css";
+@import "./contents.css";
+@import "./modal.css";
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,153 @@
+.contents {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  background-color: skyblue;
+}
+
+.list {
+  margin: auto;
+  width: 1180px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notebook {
+  flex: 1;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ranking-container {
+  display: flex;
+}
+
+.ranking {
+  width: 60px;
+  height: 60px;
+  background-color: var(--gray-900);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.num {
+  font-size: 23px;
+  font-weight: bold;
+  color: white;
+}
+
+.info-container {
+  margin-left: 60px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  flex: 1;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.my-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  /* background-color: pink; */
+  flex-direction: column;
+}
+
+.my-info-btn {
+  width: 450px;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 65px;
+  border: none;
+  background-color: #424242;
+  font-size: 18px;
+  color: white;
+}
+
+.logout-btn {
+  background-color: #a4a4a4;
+}
+
+.my-info-btn:hover {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.borrow-container {
+  flex: initial;
+  margin: 100px auto;
+  align-items: normal;
+  height: 100%;
+}
+
+.list-container {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.list-item-container {
+  border: 3px solid #424242;
+  height: 135px;
+  border-radius: 16px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.item-info-container {
+  display: flex;
+  width: 100%;
+}
+
+.item-img {
+  margin-left: 8px;
+  width: 120px;
+}
+
+.item-info-txt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-left: 50px;
+}
+
+.item-info-txt {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.item-info-date {
+  font-weight: bold;
+  font-size: 18px;
+}

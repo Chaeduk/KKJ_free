@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+ <mapper namespace="org.tukorea.myweb.mapper.HistoryMapper">
+ 	<insert id="insert">
+ 		insert into history_free (user_seq, notebook_seq, status, date) values (#{user_seq}, #{notebook_seq}, 'B', now())
+ 	</insert>
+ 	<select id="select" resultType="org.tukorea.myweb.domain.HistoryVO">
+ 		select * from history_free hf inner join notebook_free nf on hf.notebook_seq = nf.notebook_seq where hf.user_seq = #{user_seq} order by date desc
+ 	</select>
+ 	<update id="update">
+ 		update history_free set status='R' where history_seq = #{history_seq}
+ 	</update>
+ 	<select id="selectone" resultType="int">
+ 		select notebook_seq from history_free where history_seq = #{history_seq}
+ 	</select>
+ 	<select id="selectborrow" resultType="Boolean">
+ 		select exists(select * from history_free where user_seq = #{user_seq} and status='B') 
+ 	</select>
+ </mapper>

@@ -1,0 +1,19 @@
+.nav-bar {
+  margin: auto;
+  min-width: 1180px;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav {
+  font-size: 20px;
+  font-weight: 600;
+}
